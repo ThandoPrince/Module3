@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="?pageBackgroundinserv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AccountSelection">
+
+    <RadioGroup
+        android:id="@+id/Group1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="731dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView5"
+        style="?textLarge"
+        android:layout_width="379dp"
+        android:layout_height="101dp"
+        android:layout_marginTop="25dp"
+        android:text="Who are you?
+ Are you here to provide services, or are you in need of services?"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnNext_SelectAcc"
+        style="?buttonbackground"
+        android:layout_width="wrap_content"
+        android:layout_height="53dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginBottom="16dp"
+        android:text="Next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnBack_SelectAcc"
+        android:layout_width="wrap_content"
+        android:layout_height="49dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="233dp"
+        android:layout_marginRight="233dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Back"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnNext_SelectAcc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        style="?textLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="OR"
+        app:layout_constraintBottom_toTopOf="@+id/rdoService_Provider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rdoClient"
+        app:layout_constraintVertical_bias="0.145" />
+
+    <RadioButton
+        android:id="@+id/rdoClient"
+        style="?textRegular"
+        android:layout_width="213dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="32dp"
+        android:onClick="onRadioButtonClicked"
+        android:text="Client"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <RadioButton
+        android:id="@+id/rdoService_Provider"
+        style="?textRegular"
+        android:layout_width="213dp"
+        android:layout_height="52dp"
+        android:onClick="onRadioButtonClicked"
+        android:text="Service Provider"
+        app:layout_constraintBottom_toTopOf="@+id/btnNext_SelectAcc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+</androidx.constraintlayout.widget.ConstraintLayout>

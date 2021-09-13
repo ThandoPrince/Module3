@@ -1,0 +1,35 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.PrjInservTechvenger" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryVariant">@color/sky_blue</item>
+        <item name="colorOnPrimary">@color/red</item>
+        <!-- Secondary brand color. -->t
+        <item name="colorSecondary">@color/yelllow</item>
+        <item name="colorSecondaryVariant">@color/red</item>
+        <item name="colorOnSecondary">@color/blue</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/blue</item>
+        <!-- Customize your theme here. -->
+        <item name="android:buttonStyle">@style/Widget.AppCompat.Button</item>
+        <item name="pageBackgroundinserv">@style/page_backgroundinserv</item>
+        <item name="textSubheader">@style/text_subheader</item>
+        <item name="textLarge">@style/text_large</item>
+        <item name="textRegular">@style/text_regular</item>
+        <item name= "blueBackground">@style/blue_background_background</item>
+        <item name="buttonbackground">@style/button_background</item>
+        <item name="spinnerStyle">@style/Widget.AppCompat.Spinner</item>
+    </style>
+
+    <style name="Theme.PrjInservTechvenger.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name= "blueBackground">@style/blue_background_background</item>
+    </style>
+
+    <style name="Theme.PrjInservTechvenger.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.PrjInservTechvenger.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

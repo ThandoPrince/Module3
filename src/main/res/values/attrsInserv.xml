@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="pageBackgroundinserv" format="reference" />
+    <attr name="textLarge" format="reference" />
+    <attr name="textSubheader" format="reference" />
+    <attr name="textRegular" format="reference" />
+    <attr name="blueBackground" format="reference" />
+    <attr name="buttonbackground" format="reference" />
+    <attr name="whiteSmoke" format="color" />
+</resources>

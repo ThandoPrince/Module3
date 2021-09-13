@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <style android:name="button" android:parent="text_large">
+        <item android:name="android:background">@drawable/button_background</item>
+        <item android:name="android:layout_marginTop">@dimen/margin</item>
+        <item android:name="android:paddingHorizontal">@dimen/padding_horizontal</item>
+    </style>
+
+</selector>
